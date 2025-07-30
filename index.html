@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدار العراقية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background: #f1f1f1;
+    }
+
+    header {
+      background: #f4d27a;
+      color: #000;
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      width: 100px;
+      border-radius:  50%;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .column {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+    }
+
+    .main-column {
+      flex: 2;
+    }
+
+    .news-card {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .news-card:last-child {
+      border-bottom: none;
+    }
+.highlight-news{
+  background-color: #fffec1;
+  padding: 5px;
+}
+    .highlight-news img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .highlight-news h3 {
+      color: red;
+    }
+
+    .highlight-news a {
+      display: inline-block;
+      background: #ffc;
+      padding: 5px 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: red;
+      border: red solid 1px;
+    }
+
+    .card {
+      background: #eeeeee;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 40px;
+    }
+
+    .news-list li {
+      list-style: none;
+      margin: 10px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .news-list li a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .info-box {
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: black 2px 2px 12px;
+    }
+    .info{
+          background: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: black 2px 2px 12px;
+    }
+    .news-list li:hover{
+      background-color: #ffedc1;
+    }
+.info h3{
+  color: #f4d27a;
+}
+.rightbar{
+  padding: 15px;
+  border-radius: 8px;
+}
+.highlight-news img{
+  height: 200px;
+  object-fit: cover;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="c:\Users\FORSAN-TEC\Downloads\images.jpg" class="logo" alt="logo">
+    <h1>الدار العراقية</h1>
+  </header>
+
+  <div class="container">
+    <!-- Right Column -->
+    <div class="right-column rightbar">
+      <div class="info">
+        <h3>عن الموقع</h3>
+        <p>
+          وكالة إخبارية مستقلة تهتم بشأن العراق والعالم، تنقل الأخبار بمصداقية واحترافية.
+        </p>
+      </div>
+      <div class="info-box">
+        <h3>بيانات التواصل</h3>
+        <p>📞 0780 123 4567<br>
+           📧 info@iraq-news.com<br>
+           📍 بغداد - الكرادة - شارع النضال
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Column -->
+    <div class="main-column column">
+  <ul class="news-list">
+  <li><a href="#" onclick="showNews('البرلمان يصوت على قانون الموازنة', '_103927852_f69f7775-6c14-48ef-95ba-546618d2c3de.jpg.webp')">15 - البرلمان يصوت على قانون الموازنة</a></li>
+  <li><a href="#" onclick="showNews('استكمال إجراءات التحاق عموم العراق', 'images.jpg')">14 - استكمال إجراءات التحاق عموم العراق</a></li>
+  <li><a href="#" onclick="showNews('رئيس الوزراء يلتقي وفد الأمم المتحدة', 'hq720.jpg')">13 - رئيس الوزراء يلتقي وفد الأمم المتحدة</a></li>
+  <li><a href="#" onclick="showNews('وزارة التعليم تحدد موعد الامتحان الرسمي', 'create_news-intro-maker_lead.webp')">12 - وزارة التعليم تحدد موعد الامتحان الرسمي</a></li>
+  <li><a href="#" onclick="showNews('انطلاق معرض بغداد الدولي للكتاب', '64897ab197252c20f85fb644_6489756ab7a00eb374fd2ae4_breaking20video.jpeg')">11 - انطلاق معرض بغداد الدولي للكتاب</a></li>
+</ul>
+
+    </div>
+
+    <!-- Left Column -->
+    <div class="left-column column">
+      <div class="highlight-news">
+        <img src="c:\Users\FORSAN-TEC\Downloads\12-03-20-632756699.jpg" alt="news-image">
+        <h3>هجوم ناري من بغداد</h3>
+        <a href="#">اقرأ التفاصيل</a>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt="arrow">
+        <p>اضغط على الخبر لعرض التفاصيل</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  function showNews(title, imageUrl) {
+    const image = document.querySelector('.highlight-news img');
+    const heading = document.querySelector('.highlight-news h3');
+
+    image.src = imageUrl;
+    heading.textContent = title;
+  }
+</script>
+
+</body>
+</html>
